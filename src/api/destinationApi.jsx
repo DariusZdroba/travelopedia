@@ -1,3 +1,4 @@
+//json-server --watch data/traveldb.json --port 5001
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const destinationAPI = createApi({
   reducerPath: "api",

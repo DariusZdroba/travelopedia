@@ -11,6 +11,12 @@
       "city": "Chicago",
       "country": "USA",
       "daysNeeded": 5
+    },
+    {
+      "id": "3",
+      "city": "Cluj-Napoca",
+      "country": "Romania",
+      "daysNeeded": 3
     }
   ]
 }
