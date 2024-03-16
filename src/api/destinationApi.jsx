@@ -5,11 +5,13 @@ export const destinationAPI = createApi({
   reducerPath: "apidestination",
   // fetchBaseQuery = predefined fetch function for making the request
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5001/" }),
+  tagTypes: ["Destinations"],
   endpoints: (builder) => ({
     //QUERY -> GET
     //MUTATION -> POST/PUT/DELETE
     getAllDestination: builder.query({
       query: () => "destination",
+      providesTags: ["Destinations"],
     }),
     addDestination: builder.mutation({
       query: (destination) => ({
@@ -17,6 +19,7 @@ export const destinationAPI = createApi({
         method: "POST",
         body: destination,
       }),
+      invalidatesTags: ["Destinations"],
     }),
     updateDestination: builder.mutation({
       query: (destination) => ({
@@ -31,6 +34,7 @@ export const destinationAPI = createApi({
         method: "DELETE",
         body: id,
       }),
+      invalidatesTags: ["Destinations"],
     }),
   }),
 });

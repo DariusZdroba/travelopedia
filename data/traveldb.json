@@ -19,40 +19,28 @@
       "daysNeeded": 3
     },
     {
-      "id": 116.92720542148776,
+      "id": "116.92720542148776",
       "city": "Oradea",
       "country": "Romania",
       "daysNeeded": 4
     },
     {
-      "id": 104.74569140312664,
+      "id": "104.74569140312664",
       "city": "Carei",
       "country": "Romania",
       "daysNeeded": 9
     },
     {
-      "id": 80.87302927273512,
-      "city": "Los Angeles",
-      "country": "USA",
-      "daysNeeded": 1
-    },
-    {
-      "id": 82.80018513055977,
+      "id": "82.80018513055977",
       "city": "Bucuresti",
       "country": "Romania",
       "daysNeeded": 7
     },
     {
-      "id": 70.74819384083949,
-      "city": "test",
-      "country": "count",
-      "daysNeeded": 3
-    },
-    {
-      "id": 134.56220140593405,
-      "city": "test2",
-      "country": "count2",
-      "daysNeeded": 5
+      "id": 170.6840329748519,
+      "city": "Craiova",
+      "country": "Romania",
+      "daysNeeded": 8
     }
   ]
 }

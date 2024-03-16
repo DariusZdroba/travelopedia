@@ -1,5 +1,6 @@
 import React from "react";
 import { useGetAllDestinationQuery } from "../../api/destinationApi";
+import Destination from "./Destination";
 const DestinationList = () => {
   const { data, isLoading, isSuccess, isError, error } =
     useGetAllDestinationQuery();
@@ -9,16 +10,7 @@ const DestinationList = () => {
   } else if (isSuccess) {
     console.log(data);
     content = data.map((destination) => {
-      return (
-        <article key={destination.id}>
-          <div className="text-center text-info p-2">
-            <div>
-              {destination.city}, {destination.country},{" "}
-              {destination.daysNeeded} days
-            </div>
-          </div>
-        </article>
-      );
+      return <Destination destination={destination} />;
     });
   } else if (isError) {
     content = <p>{error}</p>;
